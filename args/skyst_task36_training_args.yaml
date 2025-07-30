@@ -1,0 +1,33 @@
+Qwen/Qwen2.5-7B-Instruct: 
+  per_device_train_batch_size: 1
+  num_train_epochs: 2
+  gradient_accumulation_steps: 3
+  lora_rank: 4
+  lora_alpha: 8
+  lora_dropout: 0.0
+  learning_rate: 0.0001
+  warmup_ratio: 0.05
+
+Qwen/Qwen2.5-3B-Instruct:
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  num_train_epochs: 1
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.1
+
+Qwen/Qwen1.5-1.8B:
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  num_train_epochs: 1
+  lora_rank: 4
+  lora_alpha: 8
+  lora_dropout: 0.1
+
+Qwen/Qwen1.5-7B:
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  num_train_epochs: 1
+  lora_rank: 4
+  lora_alpha: 8
+  lora_dropout: 0.1
